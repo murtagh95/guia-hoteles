@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de Node.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Murtagh@bitbucket.org/Murtagh/guia-hoteles.git"
+  },
+  "author": "Nicolas Catalano",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Murtagh/guia-hoteles#readme"
+}
