@@ -8,11 +8,151 @@
     <!-- Bootstrap CSS, desde repositorio local-->
     <link rel="stylesheet" href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
 
-    <title>Hello, world!</title>
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Guia Hoteles</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="jumbotron">
+      <h1 >Guia Hoteles</h1>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>¿Cómo funciona?</h2>
+          <p>Buscá los hoteles de acuerdo a tu preferencia</p>          
+        </div>
+        <div class="col">
+          <h2>¿Dónde puedo reservar?</h2>
+          <p>Elegñi las ciudad que te interese y luefo realizá la reserva con tus datos.</p>
+        </div>
+        <div class="col">
+          <h2>¿Cómo pago?</h2>
+          <p>Utilizá tu tarjeta fevorita</p>
+        </div>
+      </div>
+
+      
+      <div class="d-flex flex-wrap flex-row-reverse mt-5">
+        <!-- Usamos flex y justify para que el boton quede al final del contenedor -->
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+            <h2>Hotel Barcelona</h2>
+            <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+          </div>
+          <div>
+            <button class="btn btn-block btn-success">Reservar</button>
+          </div>
+          
+        </div>
+
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+            <h2>Hotel La Paz</h2>
+            <p>Hotel ubicado en pleno centro.</p>
+          </div>
+          <div>
+            <button class="btn btn-block btn-success">Reservar</button>
+          </div>
+        </div>
+
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+            <h2>Hotel Madrid</h2>
+            <p>Hotel ubicado en pleno centro.</p>
+          </div>
+          <div>
+            <button class="btn btn-block btn-success">Reservar</button>
+          </div>
+        </div>
+
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+            <h2>Hotel Buenos Aires</h2>
+            <p>Hotel ubicado en pleno cetro Buonarence. A pocos metro del obelisco</p>
+          </div>
+          <div>
+            <button class="btn btn-block btn-success">Reservar</button>
+          </div>
+        </div>
+        
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+            <h2>Hole Lima</h2>
+            <p>Hotel ubicado en pleno centro</p>
+          </div>
+          <div>
+            <button class="btn btn-block btn-success">Reservar</button>
+          </div>
+        </div>
+
+        <div class="card-hotel d-flex flex-column justify-content-between">
+          <div>
+            <h2>Hotel Rio de Janeiro</h2>
+            <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
+          </div>
+          <div>
+            <button class="btn btn-block btn-success">Reservar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+          <ul>
+            <li>
+              <a href="http://www.facebook.com">Facebook</a>
+            </li>
+
+            <li>
+              <a href="http://www.twiter.com">Twitter</a>
+            </li>
+            
+            <li>
+              <a href="http://www.instragram.com">Instragram</a>
+            </li>
+
+            <li>
+              <a href="http://www.google.com">Google</a>
+            </li>
+              
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <address>
+            <h3>Oficina central</h3>
+            Tucuman 834, CABA, Argentina
+            +5491123456789
+            contacto@guiahoteles.com
+          </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+          <ul>
+            <li>
+              <a href="http://www.facebook.com">Nosotros</a>
+            </li>
+
+            <li>
+              <a href="http://www.twiter.com">Precios</a>
+            </li>
+
+            <li>
+              <a href="http://www.instragram.com">Términos y condiciones</a>
+            </li>
+
+            <li>
+              <a href="http://www.google.com">Contacto</a>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </footer>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src='node_modules/jquery/dist/jquery.min.js'></script>
