@@ -12,12 +12,9 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
-    <title>Guia Hoteles
-      
-    </title>
+    <title>Guia Hoteles</title>
   </head>
   <body>
-    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a href="index.html" class="navbar-brand">Hoteles</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,8 +23,8 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home </a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">Nosotros</a>
@@ -38,8 +35,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Término y condiciones</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contacto</a>
           </li>
 
         </ul>
@@ -50,97 +47,89 @@
       <h1 >Guia Hoteles</h1>
     </div>
 
-    <!-- Contenido -->
     <div class="container">
       <!-- Breadcrump(migas de pan) -->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <!-- <a href="#">Home</a></li> -->
-            Home
+            <!-- <a href="#">Nosotros</a> -->
+            Contacto
+          </li>
         </ol>
       </nav>
 
-
-      <div class="row">
-        <div class="col">
-          <h2>¿Cómo funciona?</h2>
-          <p>Buscá los hoteles de acuerdo a tu preferencia</p>          
-        </div>
-        <div class="col">
-          <h2>¿Dónde puedo reservar?</h2>
-          <p>Elegñi las ciudad que te interese y luefo realizá la reserva con tus datos.</p>
-        </div>
-        <div class="col">
-          <h2>¿Cómo pago?</h2>
-          <p>Utilizá tu tarjeta fevorita</p>
-        </div>
-      </div>
-
+      <h2>Dejame tu comentario</h2>
       
-      <div class="d-flex flex-wrap flex-row-reverse mt-5">
-        <!-- Usamos flex y justify para que el boton quede al final del contenedor -->
-        <div class=" card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h2>Hotel Barcelona</h2>
-            <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+      <form action="">
+        <div class="form-row">
+          <!-- NOMBRE -->
+          <div class="form-group col-sm-6">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su Nombre">
           </div>
-          <div>
-            <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
+
+          <!-- APELLIDO -->
+          <div class="form-group col-sm-6">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese su Apellido">
           </div>
-          
+
         </div>
 
-        <div class=" card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h2>Hotel La Paz</h2>
-            <p>Hotel ubicado en pleno centro.</p>
-          </div>
-          <div>
-            <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar</button>
-          </div>
-        </div>
-
-        <div class=" card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h2>Hotel Madrid</h2>
-            <p>Hotel ubicado en pleno centro.</p>
-          </div>
-          <div>
-            <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
+        <div class="form-row">
+          <!-- MAIL -->
+          <div class="form-group col-sm-12">
+            <label for="email">Mail</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su mail">
           </div>
         </div>
 
-        <div class=" card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h2>Hotel Buenos Aires</h2>
-            <p>Hotel ubicado en pleno cetro Buonarence. A pocos metro del obelisco</p>
+        <div class="form-row">
+          <!-- DOMICILIO -->
+          <div class="form-group col-sm-9">
+            <label for="domicio">Domicilio</label>
+            <input type="text" name="domicio" id="domicio" class="form-control" placeholder="Ingrese su domicilio">
           </div>
-          <div>
-            <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
+
+          <!-- PROVINCIA -->
+          <div class="form-group col-sm-3">
+            <label for="provincia" >Provincia</label>
+            <select class="form-control" name="provincia" id="provincia">
+              <option value="Capital Federal">Capital Federal</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Mendoza" selected>Mendoza</option>
+              <option value="San Luis">San Luis</option>
+              <option value="San Juan">San Juan</option>
+              <option value="Cordoba">Cordoba</option>
+              <option value="Rio Negro">Rio Negro</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Santa Fe">Santa Fe</option>
+            </select>
           </div>
         </div>
+
+        <!-- COMENTARIO -->
+        <div class="form-group">
+          <label for="comentario">Comentario</label>
+          <textarea name="comentario" class="form-control" id="comentario" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
+          <div class="form-check">
+            <input type="checkbox" name="contactarme" id="contactarme" class="form-check-input">
+            <label for="contactarme" class="form-check-label">Quiero que me contacten</label>
+          </div>
+        </div>
+  
+        <!-- BOTON ENVIAR -->
+        <button type="submit" class="btn btn-primary mr-3">Enviar</button>
+        <button type="reset" class="btn btn-outline-primary">Borrar</button>
         
-        <div class=" card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h2>Hole Lima</h2>
-            <p>Hotel ubicado en pleno centro</p>
-          </div>
-          <div>
-            <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
-          </div>
-        </div>
+      </form>
 
-        <div class="card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h2>Hotel Rio de Janeiro</h2>
-            <p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
-          </div>
-          <div>
-            <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
-          </div>
-        </div>
-      </div>
     </div>
     
     <footer class="footer">
