@@ -24,3 +24,10 @@ body {
     border: 1px solid gray;
 }
 
+/* ICONOS */
+footer div address .oi {
+    padding: 10px;
+}
+.card-hotel div .oi {
+    padding-right: 10px;
+}
