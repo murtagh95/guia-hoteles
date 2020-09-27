@@ -132,6 +132,7 @@
             <img src="img/barcelona.jpg" class="card-img-top mb-2" alt="">
             <h5 class="card-subtitle text-muted">España</h5>
             <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
@@ -145,6 +146,7 @@
             <img src="img/La paz.jpg" class="card-img-top mb-2" alt="">
             <h5 class="card-subtitle text-muted">Bolivia</h5>
             <p class="card-text">Hotel ubicado en pleno centro.</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
@@ -158,6 +160,7 @@
             <img src="img/madrid.jpg" class="card-img-top mb-2" alt="">
             <h5 class="card-subtitle text-muted">España</h5>
             <p class="card-text">Hotel ubicado en pleno centro.</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
@@ -173,6 +176,7 @@
             <img src="img/buenos aires.png" class="card-img-top mb-2" alt="">
             <h5 class="card-subtitle text-muted">Argentina</h5>
             <p class="card-text">Hotel ubicado en pleno cetro Buonarence. A pocos metro del obelisco</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
@@ -186,6 +190,7 @@
             <img src="img/lima.jpg" class="card-img-top mb-2" alt="">
             <h5 class="card-subtitle text-muted">Perú</h5>
             <p class="card-text">Hotel ubicado en pleno cetro.</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
@@ -199,6 +204,7 @@
             <img src="img/rio de janeiro.jpg" class="card-img-top mb-2" alt="">
             <h5 class="card-subtitle text-muted">Brazil</h5>
             <p class="card-text">Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa.</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
           </div>
           <div>
             <button class="btn btn-block btn-success"><span class="oi oi-plus"></span> Reservar </button>
@@ -261,6 +267,43 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="contacto" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- CABEZERA DEL MODAL -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contacto con el Hotel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <!-- CUERPO DEL MODAL -->
+          <div class="modal-body">
+            <form id="form-contacto">
+              <div class="form-group">
+                <label for="recipiente-email" class="col-form-label">Tu email:</label>
+                <input type="email" name="recipiente-email" id="recipiente-email" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje-text" class="col-form-label">Mensaje:</label>
+                <textarea name="mensaje-text" id="mensaje-text" cols="20" rows="6" class="form-control"></textarea>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- PIE DEL MODAL -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" form="form-contacto" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
