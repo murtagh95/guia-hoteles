@@ -75,24 +75,54 @@
         </ol>
       </nav>
 
-
+      <!-- BTONONES para activar sección de información -->
       <div class="row">
-        <div class="col">
-          <h2>¿Cómo funciona?</h2>
-          <p>Buscá los hoteles de acuerdo a tu preferencia</p>          
+        <div class="col-sm-4 mb-2">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="funciona">
+            ¿Cómo funciona?
+          </button>
         </div>
-        <div class="col">
-          <h2>¿Dónde puedo reservar?</h2>
-          <p>Elegui las ciudad que te interese y luefo realizá la reserva con tus datos.</p>
+        
+        <div class="col-sm-4 mb-2">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" ria-expanded="false" aria-controls="reserva">
+            ¿Cómo puedo reservar?
+          </button>
         </div>
-        <div class="col">
-          <h2>¿Cómo pago?</h2>
-          <p>Utilizá tu tarjeta fevorita <span class="badge badge-dark">NUEVO</span></p>
+          
+        <div class="col-sm-4 mb-2">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="pago">
+            ¿Cómo pago?
+          </button>
         </div>
       </div>
 
+      <!-- Seccion de información -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="collapse multi-collapse" id="funciona">
+            <h2>¿Cómo funciona?</h2>
+            <p>Buscá los hoteles de acuerdo a tu preferencia</p>          
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="collapse multi-collapse" id="reserva">
+            <h2>¿Dónde puedo reservar?</h2>
+            <p>Elegui las ciudad que te interese y luefo realizá la reserva con tus datos.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4">  
+          <div class="collapse multi-collapse" id="pago">
+            <h2>¿Cómo pago?</h2>
+            <p>Utilizá tu tarjeta fevorita <span class="badge badge-dark">NUEVO</span></p>
+          </div>
+        </div>
+
+      </div>
+
       <!-- IMAGEN PLAYA -->
-      <img src="img/principal.jpg" alt="Imagen playa" class="img-fluid">
+      <img src="img/principal.jpg" alt="Imagen playa" class="img-fluid mt-5">
       
       <div class="row mt-5">
         <!-- Usamos flex y justify para que el boton quede al final del contenedor -->
