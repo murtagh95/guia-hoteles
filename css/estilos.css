@@ -16,12 +16,13 @@ body {
     margin-top: 30px;
 }
 
-.card-hotel{
-    flex: 1 200px;
-    margin: 5px;
+.obligatorio {
+    color: red;
 }
+
 .card-body img {
-    width: 12rem;
+    width: 100%;
+    height: 100px;
 }
 
 /* ICONOS */
@@ -30,4 +31,10 @@ footer div address .oi {
 }
 .card-hotel div .oi {
     padding-right: 10px;
+}
+
+body .alert {
+    width: 50%;
+    text-align: center;
+    
 }

@@ -41,14 +41,28 @@
           <li class="nav-item">
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
-
+          
         </ul>
+        <div class="my-1 my-lg-0">
+          <button class="btn">
+            <span class="oi oi-cart" style="color: white;"></span>
+            <span class="badge badge-light">0</span>
+          </button>
+        </div>
       </div>
     </nav>
 
     <div class="jumbotron">
       <h1 >Guia Hoteles</h1>
     </div>
+
+    <div class="alert alert-warning alert-dismissible fade show mx-auto" role="alert" >
+      <strong>Hola aventurero!</strong> No olvides pasar por el apartado de precios.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
 
     <!-- Contenido -->
     <div class="container">
@@ -69,18 +83,20 @@
         </div>
         <div class="col">
           <h2>¿Dónde puedo reservar?</h2>
-          <p>Elegñi las ciudad que te interese y luefo realizá la reserva con tus datos.</p>
+          <p>Elegui las ciudad que te interese y luefo realizá la reserva con tus datos.</p>
         </div>
         <div class="col">
           <h2>¿Cómo pago?</h2>
-          <p>Utilizá tu tarjeta fevorita</p>
+          <p>Utilizá tu tarjeta fevorita <span class="badge badge-dark">NUEVO</span></p>
         </div>
       </div>
 
+      <!-- IMAGEN PLAYA -->
+      <img src="img/principal.jpg" alt="Imagen playa" class="img-fluid">
       
-      <div class="d-flex flex-wrap mt-5">
+      <div class="row mt-5">
         <!-- Usamos flex y justify para que el boton quede al final del contenedor -->
-        <div class="card card-hotel d-flex flex-column justify-content-between mr-4">
+        <div class="col-md-4 card border-0">
           <div class="card-body">
             <h3 class="card-title">Hotel Barcelona</h3>
             <img src="img/barcelona.jpg" class="card-img-top mb-2" alt="">
@@ -93,7 +109,7 @@
           
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between mr-4">
+        <div class="col-md-4 card border-0">
           <div class="card-body">
             <h3 class="card-title">Hotel La Paz</h3>
             <img src="img/La paz.jpg" class="card-img-top mb-2" alt="">
@@ -106,7 +122,7 @@
           
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between mr-4">
+        <div class="col-md-4 card border-0">
           <div class="card-body">
             <h3 class="card-title">Hotel Madrid</h3>
             <img src="img/madrid.jpg" class="card-img-top mb-2" alt="">
@@ -118,8 +134,10 @@
           </div>
           
         </div>
+      </div>
+      <div class="row mt-5">
 
-        <div class="card card-hotel d-flex flex-column justify-content-between mr-4">
+        <div class="col-md-4 card border-0">
           <div class="card-body">
             <h3 class="card-title">Hotel Buenos Aires</h3>
             <img src="img/buenos aires.png" class="card-img-top mb-2" alt="">
@@ -132,7 +150,7 @@
           
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between mr-4">
+        <div class="col-md-4 card border-0">
           <div class="card-body">
             <h3 class="card-title">Hotel Lima</h3>
             <img src="img/lima.jpg" class="card-img-top mb-2" alt="">
@@ -145,7 +163,7 @@
           
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between mr-4">
+        <div class="col-md-4 card border-0">
           <div class="card-body">
             <h3 class="card-title">Hotel Rio de Janeiro</h3>
             <img src="img/rio de janeiro.jpg" class="card-img-top mb-2" alt="">
@@ -157,6 +175,8 @@
           </div>
           
         </div>
+      </div>
+    </div>
 
     
     <footer class="footer">

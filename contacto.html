@@ -40,6 +40,12 @@
           </li>
 
         </ul>
+        <div class="my-1 my-lg-0">
+          <button class="btn">
+            <span class="oi oi-cart" style="color: white;"></span>
+            <span class="badge badge-light">0</span>
+          </button>
+        </div>
       </div>
     </nav>
 
@@ -67,14 +73,14 @@
         <div class="form-row">
           <!-- NOMBRE -->
           <div class="form-group col-sm-6">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su Nombre">
+            <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+            <input type="text" required name="nombre" id="nombre" class="form-control" placeholder="Ingrese su Nombre">
           </div>
 
           <!-- APELLIDO -->
           <div class="form-group col-sm-6">
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese su Apellido">
+            <label for="apellido">Apellido <span class="obligatorio">*</span></label>
+            <input type="text" required name="apellido" id="apellido" class="form-control" placeholder="Ingrese su Apellido">
           </div>
 
         </div>
@@ -82,21 +88,21 @@
         <div class="form-row">
           <!-- MAIL -->
           <div class="form-group col-sm-12">
-            <label for="email">Mail</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su mail">
+            <label for="email">Mail <span class="obligatorio">*</span></label>
+            <input type="email" required name="email" id="email" class="form-control" placeholder="Ingrese su mail">
           </div>
         </div>
 
         <div class="form-row">
           <!-- DOMICILIO -->
           <div class="form-group col-sm-9">
-            <label for="domicio">Domicilio</label>
-            <input type="text" name="domicio" id="domicio" class="form-control" placeholder="Ingrese su domicilio">
+            <label for="domicio">Domicilio <span class="obligatorio">*</span></label>
+            <input type="text" required name="domicio" id="domicio" class="form-control" placeholder="Ingrese su domicilio">
           </div>
 
           <!-- PROVINCIA -->
           <div class="form-group col-sm-3">
-            <label for="provincia" >Provincia</label>
+            <label for="provincia" >Provincia <span class="obligatorio">*</span></label>
             <select class="form-control" name="provincia" id="provincia">
               <option value="Capital Federal">Capital Federal</option>
               <option value="Buenos Aires">Buenos Aires</option>
@@ -113,8 +119,8 @@
 
         <!-- COMENTARIO -->
         <div class="form-group">
-          <label for="comentario">Comentario</label>
-          <textarea name="comentario" class="form-control" id="comentario" cols="30" rows="5"></textarea>
+          <label for="comentario">Comentario <span class="obligatorio">*</span></label>
+          <textarea name="comentario" required class="form-control" id="comentario" cols="30" rows="5"></textarea>
         </div>
 
         <div class="form-group">
@@ -129,7 +135,7 @@
         <button type="reset" class="btn btn-outline-primary">Borrar</button>
         
       </form>
-
+      <p class="mt-2"><span class="obligatorio">*</span> Texto obligatorio</p>
     </div>
     
     <footer class="footer">
