@@ -67,93 +67,127 @@
         </ol>
       </nav>
 
-      <!-- CREAMOS LA TABLA DE RECIOS -->
-      <!-- Con table-responsive se crea un scroll en la tabla -->
-      <div class="table-responsive"> 
-        <table class="table table-striped">
-          <thead class="thead-dark">
-          <th>Calidad</th>
-          <th>Pinamar</th>
-          <th>Mar del plata</th>
-          <th>San Clemente</th>
-          <th>Santa Teresita</th>
-        </thead>
+      <!-- Declaramos la barra de tab -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
         
-        <tbody>
-          <tr>
-            <td><span class="oi oi-star"></span></td>
-            <td>$100</td>
-            <td>$200</td>
-            <td>$300</td>
-            <td>$600</td>
-          </tr>
-          
-          <tr>
-            <td>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-            </td>
-            <td>$600</td>
-            <td>$800</td>
-            <td>$850</td>
-            <td>$900</td>
-          </tr>
-          
-          <tr>
-            <td>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-            </td>
-            <td>$1000</td>
-            <td>$2000</td>
-            <td>$3000</td>
-            <td>$6000</td>
-          </tr>
-          
-          <tr>
-            <td>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-            </td>
-            <td>$1500</td>
-            <td>$2900</td>
-            <td>$3500</td>
-            <td>$4000</td>
-          </tr>
-          
-          <tr>
-            <td>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-            </td>
-            <td>$5000</td>
-            <td>$5600</td>
-            <td>$6100</td>
-            <td>$7000</td>
-          </tr>
-          
-         </tbody>
-        </table>
+        <li class="nav-item">
+          <a class="nav-link active" href="#compara" id="compara-tab" data-toggle="tab" role="tab" aria-controls="compara" aria-selected="true">Compara</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#tarjetas" id="tarjetas-tab" data-toggle="tab" role="tab" aria-controls="tarjetas" aria-selected="true">Tarjetas</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#comentarios" id="comentarios-tab" data-toggle="tab" role="tab" aria-controls="comentarios" aria-selected="true">Comentarios</a>
+        </li>
+        
+      </ul>
+
+
+      <!-- CREAMOS LA TABLA DE RECIOS -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+          <!-- Con table-responsive se crea un scroll en la tabla -->
+          <div class="table-responsive mt-3"> 
+            <table class="table table-striped">
+              <thead class="thead-dark">
+              <th>Calidad</th>
+              <th>Pinamar</th>
+              <th>Mar del plata</th>
+              <th>San Clemente</th>
+              <th>Santa Teresita</th>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <td><span class="oi oi-star"></span></td>
+                <td>$100</td>
+                <td>$200</td>
+                <td>$300</td>
+                <td>$600</td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                </td>
+                <td>$600</td>
+                <td>$800</td>
+                <td>$850</td>
+                <td>$900</td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                </td>
+                <td>$1000</td>
+                <td>$2000</td>
+                <td>$3000</td>
+                <td>$6000</td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                </td>
+                <td>$1500</td>
+                <td>$2900</td>
+                <td>$3500</td>
+                <td>$4000</td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                </td>
+                <td>$5000</td>
+                <td>$5600</td>
+                <td>$6100</td>
+                <td>$7000</td>
+              </tr>
+              
+            </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+          <!-- Tabla de tarjetas -->
+          <div class="d-felx mt-3" >
+            <div class="card mx-auto" style="width: 18rem;">
+              <div class="card-header bg-dark text-white">
+                Tarjeta aceptadas
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tarjeta Básica</li>
+                <li class="list-group-item">Tarjeta VIP</li>
+                <li class="list-group-item">Tarjeta Black</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMENTARIOS -->
+        <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+          <p class="mt-3">COMENTARIOS</p>
+        </div>
+
       </div>
 
-      <div class="d-felx ">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header bg-dark text-white">
-            Tarjeta aceptadas
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Tarjeta Básica</li>
-            <li class="list-group-item">Tarjeta VIP</li>
-            <li class="list-group-item">Tarjeta Black</li>
-          </ul>
-        </div>
-      </div>
+
+      
 
     </div>
     
