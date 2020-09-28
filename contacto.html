@@ -88,8 +88,17 @@
         <div class="form-row">
           <!-- MAIL -->
           <div class="form-group col-sm-12">
-            <label for="email">Mail <span class="obligatorio">*</span></label>
-            <input type="email" required name="email" id="email" class="form-control" placeholder="Ingrese su mail">
+            <label for="email" class="d-inline-block">
+              Mail <span class="obligatorio">*</span>
+              
+            </label>
+            <div class="input-group mb-3">
+              <input type="email" required name="email" id="email" class="form-control" placeholder="Ingrese su mail">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1" data-toggle="tooltip" data-placement="top" title="El mail debe tener un @ y como minimo un punto(.)">?</span>
+              </div>
+            </div>
+            
           </div>
         </div>
 
@@ -194,7 +203,14 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src='node_modules/jquery/dist/jquery.min.js'></script>
-    <script src='node_modules/popper.js/dist/popper.min.js'></script>
+    <script src='node_modules/popper.js/dist/umd/popper.min.js'></script>
     <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+
+    <!-- Activación TOOLTIP -->
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      })
+    </script>
   </body>
 </html>
