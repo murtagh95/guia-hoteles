@@ -1,0 +1,56 @@
+// Defenimos variables
+@yellow: #decc0d;
+@black: #363125;
+@red :#9c080f;
+@green : #009e2d;
+
+// Definimos un mixin
+.margenes(@top: 0px, @bottom: 0px) {
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+
+
+
+body {
+    // margin-top: 50px;
+    .margenes(50px)
+}
+
+.jumbotron {
+    background-color: @yellow;
+    color: @black;
+    border-bottom: 3px solid @black;
+
+}
+
+.footer {
+    padding: 10px 10px 0 10px;
+    background-color: @yellow;
+    .margenes(30px)
+}
+
+.obligatorio {
+    color: red;
+}
+
+.card-body img {
+    width: 100%;
+    height: 100px;
+}
+
+/* ICONOS */
+footer div address .oi {
+    padding: 10px;
+}
+.card-hotel div .oi {
+    padding-right: 10px;
+}
+
+body .alert {
+    width: 50%;
+    text-align: center;
+    
+}
+
+
